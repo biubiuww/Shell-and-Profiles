@@ -13,3 +13,10 @@ wget --no-check-certificate https://raw.githubusercontent.com/thompson1966/scrip
 chmod +x unixbench.sh
 ./unixbench.sh
 ```
+
+### aliremove.sh
+- 卸载阿里云盾、安骑士
+- 屏蔽阿里云盾IP
+```bash
+wget --no-check-certificate https://raw.githubusercontent.com/thompson1966/scripts/master/aliremove.sh && chmod +x unixbench.sh && ./unixbench.sh
+```

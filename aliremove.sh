@@ -16,13 +16,13 @@ fi
 
 # stop aegis and aliyundun service
 stop_service(){
-	killall -9 aegis_cli >/dev/null 2>&1
-	killall -9 aegis_update >/dev/null 2>&1
-	killall -9 aegis_cli >/dev/null 2>&1
+    killall -9 aegis_cli >/dev/null 2>&1
+    killall -9 aegis_update >/dev/null 2>&1
+    killall -9 aegis_cli >/dev/null 2>&1
     killall -9 aegis_quartz >/dev/null 2>&1
-	killall -9 AliYunDun >/dev/null 2>&1
-	killall -9 AliHids >/dev/null 2>&1
-	killall -9 AliYunDunUpdate >/dev/null 2>&1
+    killall -9 AliYunDun >/dev/null 2>&1
+    killall -9 AliHids >/dev/null 2>&1
+    killall -9 AliYunDunUpdate >/dev/null 2>&1
     printf "%-40s %40s\n" "Stopping aegis" "[  OK  ]"
     printf "%-40s %40s\n" "Stopping quartz" "[  OK  ]"
 }
@@ -32,16 +32,16 @@ remove_aliyundun(){
 if [ -d /usr/local/aegis ];then
     rm -rf /usr/local/aegis/aegis_client
     rm -rf /usr/local/aegis/aegis_update
-	rm -rf /usr/local/aegis/aegis_quartz
-	rm -rf /usr/local/aegis/alihids
+    rm -rf /usr/local/aegis/aegis_quartz
+    rm -rf /usr/local/aegis/alihids
 fi
 }
 
 # uninstall all service
 uninstall_service() {
    if [ -f "/etc/init.d/aegis" ]; then
-		/etc/init.d/aegis stop  >/dev/null 2>&1
-		rm -f /etc/init.d/aegis
+        /etc/init.d/aegis stop  >/dev/null 2>&1
+        rm -f /etc/init.d/aegis
    fi
 
 	if [ $LINUX_RELEASE = "GENTOO" ]; then
