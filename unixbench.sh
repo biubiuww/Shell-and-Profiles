@@ -7,7 +7,7 @@
 
 cur_dir=/opt/unixbench
 UnixBench_file="UnixBench-5.1.4.tar.gz"
-UnixBench_url="https://github.com/qcsuper/byte-unixbench/releases/download/v5.1.4/UnixBench-5.1.4.tar.gz"
+UnixBench_url="https://github.com/thompson1966/scripts/tools/UnixBench-5.1.4.tar.gz"
 
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${RED}Error:${PLAIN} This script must be run as root!" && exit 1
