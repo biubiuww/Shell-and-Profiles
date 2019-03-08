@@ -101,8 +101,8 @@ iptables_list(){
     iptables -I INPUT -s 106.11.222.128/26 -j DROP
     iptables -I INPUT -s 106.11.222.192/26 -j DROP
     iptables -I INPUT -s 106.11.223.0/26 -j DROP
-    /etc/init.d/iptables save
-    /etc/init.d/iptables restart
+#    /etc/init.d/iptables save
+#    /etc/init.d/iptables restart
      printf "%-40s %40s\n" "AliYunDun IP add blacklist" "[  OK  ]"
 }
 
