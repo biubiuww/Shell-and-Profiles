@@ -21,3 +21,7 @@ chmod +x unixbench.sh
 wget --no-check-certificate https://raw.githubusercontent.com/biubiuww/Shell-and-Profiles/master/aliremove.sh && chmod +x aliremove.sh && ./aliremove.sh
 ```
 
+### dd脚本
+
+- 转自萌咖大佬
+- [一键重装Debian/Ubuntu/CentOS](dd)

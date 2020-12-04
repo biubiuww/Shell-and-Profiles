@@ -1,4 +1,4 @@
-### dd脚本
+# dd脚本
 ### 源自萌咖大佬的备份
 - 自动重装Debian/Ubuntu/CentOS等系统
 - 默认root密码:MoeClub.org （安装完成以后及时修改密码passwd root）
@@ -40,11 +40,15 @@ yum update
 
 ### 快速使用示例
 ```bash
-
+bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/biubiuww/Shell-and-Profiles/master/dd/InstallNET.sh') -d 8 -v 64 -a
 ```
 
 ###下载及说明:
 
+```bash
+wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com/biubiuww/Shell-and-Profiles/master/dd/InstallNET.sh' && chmod +x InstallNET.sh
+
+```
 
 ```bash
 Usage:
